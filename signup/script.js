@@ -13,21 +13,21 @@ const signUp = () =>{
   .then((userCredential) => {
     signUpBtn.innerText = 'SignUp'
     const user = userCredential.user;
-    console.log(user)
-    Toastify({
-        text: `Hogya signup....`,
-        duration: 3000
-        }).showToast();
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    signUpBtn.innerText = 'SignUp'
-    Toastify({
-        text: `${errorMessage}`,
-        duration: 3000
-        }).showToast();
-  });
+  //   console.log(user)
+  //   Toastify({
+  //       text: `Hogya signup....`,
+  //       duration: 3000
+  //       }).showToast();
+  // })
+  // .catch((error) => {
+  //   const errorCode = error.code;
+  //   const errorMessage = error.message;
+  //   signUpBtn.innerText = 'SignUp'
+  //   Toastify({
+  //       text: `${errorMessage}`,
+  //       duration: 3000
+  //       }).showToast();
+  // });
 }
 
 signUpBtn.addEventListener('click',signUp);
