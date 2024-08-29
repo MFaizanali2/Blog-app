@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: gray !important;
+}
+.nav-link{
+    font-size: 32px !important;
+    padding: 40px 0 !important;
+}  
+.title{
+    cursor: pointer !important;
+    font-size: 28px !important;
+    font-family: sans-serif !important;
+    text-decoration: none !important;
+    color: #000 !important;
+}
